@@ -1,0 +1,38 @@
+Name: Connor Gibson
+Email: cogibson@ucsd.edu
+PID: A18677169
+
+===========================================================
+   Task 2
+===========================================================
+INSTRUCTIONS:
+1. Do NOT modify the question numbers (e.g., Question 1, Question 2).
+2. Type your answers directly below the dashed line for each question.
+3. Save this file as 'submission.txt' and upload it to Gradescope
+   in the Task 2 assignment.
+===========================================================
+
+Question 1: add(0, <element>) and add(size, <element>) add
+an element to the front and back of the arraylist 
+respectively. Let's say we add an extremely large amount of 
+elements to our arraylist. In method 1, we use add(0, 
+<element>) to add every element to the front of the 
+arraylist. In method 2, we use add(size, <element>) to add 
+every element to the back of the arraylist. You may assume
+that `expandCapacity()` happens rarely. 
+
+Using theory learned from class and zyBooks reading, will 
+method 1 or method 2 take longer? Explain your reasoning. 
+
+Max 700 characters.
+-----------------------------------------------------------
+
+Method 1 will take longer because it will be shifting each
+element one position at a time, which increases the time spent.
+In method 2, you only add it to the end, so no other 
+elements have to move positions, and it will be able to 
+complete the arraylist more quickly.
+
+===========================================================
+   END OF SUBMISSION
+===========================================================

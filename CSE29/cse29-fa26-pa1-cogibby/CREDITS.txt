@@ -1,0 +1,5 @@
+Discussion of how you used LLMs/AI tools, who you collaborated with here, etc.
+
+I used AI tools (or google) to look up header files, and see how
+they can help me. I also did some research into various C logic such 
+as emojis (bytes), and easy ways to encode as a human.

@@ -1,0 +1,69 @@
+Name:
+Email:
+PID:
+
+================================================================================
+   Task 2
+================================================================================
+INSTRUCTIONS:
+1. Do NOT modify the question numbers (e.g., Question 1, Question 2).
+2. Type your answers directly below the dashed line for each question.
+3. Save this file as 'submission.txt' and upload it to Gradescope.
+4. For the following questions, assume that any underlying dynamic arrays
+have sufficient initial capacity, or that capacity expansion is handled
+identically across data structures and can be ignored for your time
+complexity comparisons.
+================================================================================
+
+Question 1: A developer implements a Stack ADT using a standard ArrayList
+(as opposed to a Deque like in this PA). For the push(element) operation, they
+use list.add(list.size(), element). For the pop() operation, they use
+list.remove(list.size() - 1).
+
+A) What is the overall worst-case Big-O time complexity of executing a
+sequence of N consecutive push operations, followed immediately by N
+consecutive pop operations?
+
+B) Explain exactly what happens in the underlying array during the pop
+sequence to justify your answer for Part A.
+
+Max 400 characters.
+--------------------------------------------------------------------------------
+
+A). O(N)
+
+B). Index is calculated (size-1), which is the last 
+filled spot in the array. To remove, read the element, set the
+index to null, decrement size by 1, and return the 
+element that was read. Since no shifting or 
+capacity changes occur, each individual event in each i
+ndividual operation takes O(1) worst-case 
+runtime, which makes it O(N) + O(N) for both operations, leaving O(N) overall.
+
+================================================================================
+Question 2: A developer implements a Queue ADT using a standard ArrayList
+(as opposed to a Deque like in this PA). For the enqueue(element) operation,
+they use list.add(list.size(), element). For the dequeue() operation, they
+use list.remove(0).
+
+A) What is the worst-case Big-O time complexity of executing a sequence of N
+consecutive enqueue operations, followed immediately by N consecutive dequeue
+operations?
+
+B) Explain exactly what happens in the underlying array during the dequeue
+sequence to justify your answer for Part A, and why this differs
+fundamentally from the Stack implementation above.
+
+Max 400 characters.
+--------------------------------------------------------------------------------
+
+A). O(N^2)
+
+B). Index 0 saved to be returned, and then removed. All elements remaining are 
+then shifted left one. The size is decremented by one, and the final slot 
+can be set to null for consistency. Since there is shifting, it will require 
+O(N^2) worst case runtime. This is different from before because pop removed 
+from the end, so there was no shifting, and could execute in O(1) worst timing.
+================================================================================
+   END OF SUBMISSION
+================================================================================

@@ -1,0 +1,37 @@
+Name:
+Email:
+PID:
+
+===========================================================
+   Task 2
+===========================================================
+INSTRUCTIONS:
+1. Do NOT modify the question numbers (e.g., Question 1, Question 2).
+2. Type your answers directly below the dashed line for each question.
+3. Save this file as 'submission.txt' and upload it to Gradescope.
+===========================================================
+
+Question 1: add(0, <element>) and add(size, <element>) add
+an element to the front and back of the doubly linkedlist 
+respectively. Let's say we add a large amount of elements
+to our linkedlist. In method 1, we use add(0, <element>) to 
+add every element to the front of the linkedlist. In method 
+2, we use add(size, <element>) to add every element to the 
+back of the linkedlist. 
+
+Using theory learned from class and zyBooks reading, will 
+method 1 or method 2 take longer or will they be similar? 
+Explain your reasoning. 
+
+Max 700 characters.
+-----------------------------------------------------------
+
+They will take around the same time, as in either case, 
+there will be 4 pointers that need to be updated per 
+method call. It doesn't require shifting or traversing 
+all elements like an arraylist. It would take 
+O(n) for both cases.
+
+===========================================================
+   END OF SUBMISSION
+===========================================================

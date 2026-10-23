@@ -1,0 +1,52 @@
+Name:
+Email:
+PID:
+
+===========================================================
+   Task 2
+===========================================================
+INSTRUCTIONS:
+1. Do NOT modify the question numbers (e.g.,
+   Question 1, Question 2).
+2. Type your answers directly below the dashed
+   line for each question.
+3. Save this file as 'submission.txt' and upload
+   it to Gradescope.
+===========================================================
+
+Question 1: In a hash map with separate chaining,
+we typically assume a uniform hashing distribution
+(every key is equally likely to hash to any of the
+available slots, independent of where other keys
+are assigned). Under this assumption, if we maintain
+a load factor below a certain threshold, the
+average-case time complexity for insertion is O(1).
+
+However, when the number of elements exceeds the
+threshold that we set, we must expand the capacity
+of the underlying data structure. In isolation, this is an
+O(n) operation since we need to move all of
+the elements to a resized hash table.
+
+Despite this O(n) operation, we still consider
+insertion to be O(1) in the long run.
+
+1) What is the specific term for this type of time
+complexity analysis?
+2) Explain why we can claim it is O(1) even
+though a resize is O(n).
+
+Max 700 characters.
+-----------------------------------------------------------
+
+1). The term is amortized analysis
+
+2). On average, a hashmap is more likely to have an 
+opening than to be full, since it resizes double, giving 
+more frequency for O(1). Occasional O(n) resize is 
+spread, or amortized over many cheap insertions, but 
+overall the average if O(1).
+
+===========================================================
+   END OF SUBMISSION
+===========================================================
