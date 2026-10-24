@@ -1,4 +1,4 @@
-# Connor Gibson — Course Project Archive
+﻿# Connor Gibson — Course Project Archive
 
 This repository contains my academic and personal coding projects from UCSD, organized by course and project. It is meant to serve as a public portfolio of my programming work across Python, Java, and C.
 
@@ -8,6 +8,11 @@ This repository contains my academic and personal coding projects from UCSD, org
 - `CSE12/` — Java data structures and algorithms assignments
 - `CSE29/` — C programming assignments and projects
 - `8a-pygame-demo/` — Python Pygame game demo
+- `ResumeVariants/` — reusable tailored resume variants for internship applications
+- `CoverLetters/` — general cover letter starting points
+
+## Project Highlights
+See [`PROJECTS.md`](PROJECTS.md) for a short list of the most relevant projects.
 
 ## Notes
 - The ETTA Time Tracker project from UCSD ITS is proprietary and is not included yet.
